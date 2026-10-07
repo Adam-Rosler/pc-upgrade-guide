@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upgrading Adam's computer: a simple guide</title>
+<style>
+  :root {
+    --bg: var(--background, #fbfaf7);
+    --ink: var(--foreground, #1f2328);
+    --soft: var(--muted-foreground, #5d6670);
+    --card-bg: var(--card, #ffffff);
+    --line: var(--border, #e3e0d8);
+    --brand: var(--accent, #2f6fdb);
+    --ok: var(--success, #1f8a5b);
+    --warn: var(--warning, #b7791f);
+    --stop: var(--destructive, #c2412d);
+    --r: 14px;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 18px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .page { max-width: 760px; margin: 0 auto; padding: 8px 0 48px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 8px 0 6px; }
+  h2 { font-size: 24px; margin: 0; }
+  h3 { font-size: 19px; margin: 18px 0 6px; }
+  p { margin: 8px 0; }
+  .lead { color: var(--soft); font-size: 19px; }
+  .card { background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--r); padding: 18px 20px; margin: 18px 0; }
+  .part-head { display: flex; align-items: center; gap: 14px; margin-bottom: 4px; }
+  .badge { flex: none; width: 44px; height: 44px; border-radius: 50%; background: var(--brand); color: #fff;
+           display: grid; place-items: center; font-weight: 700; font-size: 20px; }
+  .meta { color: var(--soft); font-size: 16px; }
+  ol.steps { padding-left: 0; list-style: none; counter-reset: s; margin: 10px 0 0; }
+  ol.steps > li { counter-increment: s; position: relative; padding: 10px 0 10px 48px; border-top: 1px solid var(--line); }
+  ol.steps > li:first-child { border-top: 0; }
+  ol.steps > li::before { content: counter(s); position: absolute; left: 0; top: 10px; width: 32px; height: 32px; border-radius: 50%;
+                          border: 2px solid var(--brand); color: var(--brand); font-weight: 700; display: grid; place-items: center; font-size: 16px; }
+  .text { display: inline-block; background: color-mix(in srgb, var(--brand) 12%, transparent); color: var(--brand);
+          border-radius: 999px; padding: 2px 12px; font-weight: 600; white-space: nowrap; }
+  .warn { border-left: 5px solid var(--stop); background: color-mix(in srgb, var(--stop) 8%, transparent);
+          padding: 10px 14px; border-radius: 8px; margin: 10px 0; }
+  .tip { border-left: 5px solid var(--ok); background: color-mix(in srgb, var(--ok) 8%, transparent);
+         padding: 10px 14px; border-radius: 8px; margin: 10px 0; }
+  .boxes { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-top: 10px; }
+  .box { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font-size: 16px; }
+  .box b { display: block; font-size: 17px; }
+  .who { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+  .who.mom { color: var(--ok); } .who.shop { color: var(--warn); }
+  figure { margin: 12px 0; }
+  figure svg { width: 100%; height: auto; display: block; }
+  figcaption { color: var(--soft); font-size: 15px; margin-top: 4px; }
+  .video { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: #000; margin-top: 8px; }
+  .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .vlink { font-size: 15px; color: var(--soft); }
+  a { color: var(--brand); }
+  .quote { font-size: 18px; border: 1px dashed var(--line); border-radius: 10px; padding: 12px 14px; margin: 10px 0; }
+  .check { list-style: none; padding: 0; margin: 8px 0; }
+  .check li { padding: 4px 0 4px 30px; position: relative; }
+  .check li::before { content: "☐"; position: absolute; left: 0; font-size: 20px; line-height: 1.3; }
+  .muted { color: var(--soft); }
+  @media (max-width: 520px) { body { font-size: 17px; } h1 { font-size: 26px; } ol.steps > li { padding-left: 42px; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+<h1>Upgrading Adam's computer</h1>
+<p class="lead">Hi Mom! This is everything, one step at a time. You'll do Parts 1 and 2 at home (about 30 minutes in total), then a computer shop does Part 3. Adam helps from his laptop the whole way.</p>
+
+<div class="card">
+  <h3 style="margin-top:0">If you're ever unsure</h3>
+  <p>Stop, take a photo of the screen or the computer with your phone, and text it to Adam. Nothing here breaks if you wait.</p>
+  <div class="boxes">
+    <div class="box"><span class="who mom">Part 1 · you</span><b>Software update</b>≈ 15 min · needs the screen</div>
+    <div class="box"><span class="who mom">Part 2 · you</span><b>New memory</b>≈ 15 min · a screwdriver</div>
+    <div class="box"><span class="who shop">Part 3 · a shop</span><b>Processor, fan, graphics card</b>bring 3 boxes</div>
+  </div>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0">What's in each box</h3>
+  <div class="boxes">
+    <div class="box"><b>Memory</b>From eBay: 4 long thin green sticks (Samsung). <span class="muted">You install these.</span></div>
+    <div class="box"><b>Processor</b>Box says <b style="display:inline">AMD Ryzen 9</b>. <span class="muted">For the shop.</span></div>
+    <div class="box"><b>Fan (cooler)</b>Box says <b style="display:inline">Thermalright</b>. <span class="muted">For the shop.</span></div>
+    <div class="box"><b>Graphics card</b>Box says <b style="display:inline">GeForce RTX 5070 Ti</b>. <span class="muted">For the shop.</span></div>
+  </div>
+  <p class="muted" style="margin-top:12px">You'll also need: a USB stick (anything on it gets erased), a regular Phillips screwdriver, and your phone.</p>
+</div>
+
+<!-- PART 1 -->
+<div class="card">
+  <div class="part-head"><div class="badge">1</div><div><h2>The software update</h2><div class="meta">About 15 minutes. The old parts stay in for this one.</div></div></div>
+  <p>This teaches the computer about its new processor. It must happen <b>first</b>, while the old parts are still inside.</p>
+  <ol class="steps">
+    <li>Make sure the computer's <b>screen, keyboard and mouse</b> are plugged in and the screen is on.</li>
+    <li>Plug the <b>USB stick</b> into any USB port on the back of the computer.</li>
+    <li>Text Adam: <span class="text">USB is in</span>. He'll put the update on it and restart the computer for you.</li>
+    <li>The screen shows a menu with <b>MSI</b> at the top. Find the button that says <b>M-FLASH</b> (usually bottom-left) and click it. If it asks "Are you sure?", click <b>Yes</b>.</li>
+    <li>It restarts and shows a list. Click the <b>USB stick</b>, then the file named <b>E7A38AMS.BP4</b>, then <b>Yes</b>.</li>
+    <li><b>Leave it completely alone for 10 minutes.</b> It finishes and restarts by itself.
+      <div class="warn"><b>Don't</b> turn it off, unplug it, or press anything, even if the screen goes black or it restarts on its own. That's normal.</div></li>
+    <li>When it's back, text Adam: <span class="text">Update done</span>.</li>
+  </ol>
+  <h3>Watch first (2 minutes)</h3>
+  <p class="muted">MSI's own video. Yours will look a little different, but the M-FLASH steps are the same.</p>
+  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/sKMub20CUNI" title="MSI: how to update BIOS using M-FLASH" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+  <p class="vlink">Video not showing? <a href="https://www.youtube.com/watch?v=sKMub20CUNI">Open it on YouTube</a></p>
+</div>
+
+<!-- PART 2 -->
+<div class="card">
+  <div class="part-head"><div class="badge">2</div><div><h2>The new memory</h2><div class="meta">About 15 minutes. You'll swap 2 old sticks for 4 new ones.</div></div></div>
+
+  <h3>Turn it off and open it</h3>
+  <ol class="steps">
+    <li>Text Adam: <span class="text">Ready for memory</span>. He turns the computer off for you.</li>
+    <li>When the screen is dark and the lights are off, flip the <b>switch on the back to O</b> and <b>unplug the power cord</b>.</li>
+    <li><b>Touch a bare metal part of the case</b> for a second. This clears static electricity, which can damage the parts.</li>
+    <li>Take out the <b>2 screws on the back edge</b> of the side panel, slide the panel back and lift it off. Lay the computer on its side, open side up.</li>
+  </ol>
+  <figure>
+    <svg viewBox="0 0 680 330" role="img" aria-label="The back of the computer: power switch and power cord at the bottom, side panel screws on the right edge">
+      <rect x="250" y="20" width="190" height="280" rx="10" fill="none" stroke="currentColor" stroke-width="3"/>
+      <rect x="268" y="40" width="60" height="110" rx="4" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="2"/>
+      <text x="298" y="100" text-anchor="middle" font-size="16" fill="currentColor" opacity=".55">ports</text>
+      <g stroke="currentColor" stroke-opacity=".3" stroke-width="2"><line x1="345" y1="170" x2="425" y2="170"/><line x1="345" y1="185" x2="425" y2="185"/><line x1="345" y1="200" x2="425" y2="200"/></g>
+      <rect x="262" y="218" width="96" height="70" rx="5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <rect x="274" y="234" width="24" height="38" rx="3" fill="#c2412d"/>
+      <rect x="312" y="238" width="32" height="30" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <path d="M328 268 C 328 318, 230 318, 190 322" fill="none" stroke="currentColor" stroke-width="5"/>
+      <circle cx="430" cy="40" r="8" fill="#2f6fdb"/><circle cx="430" cy="280" r="8" fill="#2f6fdb"/>
+      <line x1="272" y1="252" x2="205" y2="150" stroke="#c2412d" stroke-width="2.5"/>
+      <text x="10" y="128" font-size="24" font-weight="700" fill="#c2412d">① Switch to O</text>
+      <text x="10" y="155" font-size="18" fill="currentColor" opacity=".7">(the red switch)</text>
+      <line x1="215" y1="318" x2="150" y2="262" stroke="currentColor" stroke-width="2.5"/>
+      <text x="10" y="240" font-size="24" font-weight="700" fill="currentColor">② Unplug</text>
+      <text x="10" y="266" font-size="18" fill="currentColor" opacity=".7">the power cord</text>
+      <line x1="438" y1="44" x2="500" y2="128" stroke="#2f6fdb" stroke-width="2.5"/>
+      <line x1="438" y1="276" x2="500" y2="190" stroke="#2f6fdb" stroke-width="2.5"/>
+      <text x="505" y="150" font-size="24" font-weight="700" fill="#2f6fdb">③ Unscrew</text>
+      <text x="505" y="176" font-size="18" fill="currentColor" opacity=".7">these 2, then slide</text>
+      <text x="505" y="198" font-size="18" fill="currentColor" opacity=".7">the side panel off</text>
+    </svg>
+    <figcaption>The back of the computer. Your case may look a bit different; the switch and cord are always at the power box (usually the bottom).</figcaption>
+  </figure>
+
+  <h3>Swap the sticks</h3>
+  <figure>
+    <svg viewBox="0 0 700 330" role="img" aria-label="Inside the computer: the 4 memory slots are the tall thin slots just right of the processor fan">
+      <rect x="20" y="20" width="420" height="290" rx="8" fill="none" stroke="currentColor" stroke-width="3"/>
+      <text x="36" y="46" font-size="16" fill="currentColor" opacity=".55">looking straight down at the board</text>
+      <rect x="70" y="72" width="130" height="130" rx="8" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <circle cx="135" cy="137" r="46" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="2"/>
+      <text x="135" y="228" text-anchor="middle" font-size="18" fill="currentColor" opacity=".75">processor + fan</text>
+      <g fill="#1f8a5b" fill-opacity=".2" stroke="#1f8a5b" stroke-width="2.5">
+        <rect x="240" y="62" width="18" height="170" rx="2"/><rect x="270" y="62" width="18" height="170" rx="2"/><rect x="300" y="62" width="18" height="170" rx="2"/><rect x="330" y="62" width="18" height="170" rx="2"/></g>
+      <g fill="#1f8a5b"><rect x="237" y="52" width="24" height="10" rx="2"/><rect x="267" y="52" width="24" height="10" rx="2"/><rect x="297" y="52" width="24" height="10" rx="2"/><rect x="327" y="52" width="24" height="10" rx="2"/>
+        <rect x="237" y="232" width="24" height="10" rx="2"/><rect x="267" y="232" width="24" height="10" rx="2"/><rect x="297" y="232" width="24" height="10" rx="2"/><rect x="327" y="232" width="24" height="10" rx="2"/></g>
+      <rect x="50" y="260" width="330" height="34" rx="4" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="2"/>
+      <text x="215" y="283" text-anchor="middle" font-size="16" fill="currentColor" opacity=".55">graphics card (shop does it)</text>
+      <line x1="352" y1="140" x2="455" y2="120" stroke="#1f8a5b" stroke-width="2.5"/>
+      <text x="460" y="112" font-size="24" font-weight="700" fill="#1f8a5b">4 memory slots</text>
+      <text x="460" y="138" font-size="18" fill="currentColor" opacity=".7">right next to the fan</text>
+      <line x1="353" y1="57" x2="455" y2="205" stroke="#1f8a5b" stroke-width="2.5"/>
+      <text x="460" y="212" font-size="24" font-weight="700" fill="#1f8a5b">clips at each end</text>
+      <text x="460" y="238" font-size="18" fill="currentColor" opacity=".7">push down to open</text>
+    </svg>
+    <figcaption>The 4 memory slots stand right next to the processor fan. Right now 2 of them have sticks in.</figcaption>
+  </figure>
+  <ol class="steps">
+    <li><b>Remove the 2 old sticks:</b> push the clip at each end of the slot down, then pull the stick straight up. Put the old sticks in the eBay box.</li>
+    <li><b>Fill all 4 slots with the new sticks.</b> Each stick has a small notch in its gold edge. Line it up with the bump inside the slot; it only fits one way.
+      <figure>
+        <svg viewBox="0 0 640 230" role="img" aria-label="A memory stick: the notch in its gold edge lines up with the bump in the slot">
+          <rect x="60" y="20" width="520" height="90" rx="6" fill="#1f8a5b" fill-opacity=".18" stroke="#1f8a5b" stroke-width="2.5"/>
+          <g fill="currentColor" fill-opacity=".5"><rect x="90" y="40" width="44" height="40" rx="3"/><rect x="150" y="40" width="44" height="40" rx="3"/><rect x="210" y="40" width="44" height="40" rx="3"/><rect x="270" y="40" width="44" height="40" rx="3"/><rect x="380" y="40" width="44" height="40" rx="3"/><rect x="440" y="40" width="44" height="40" rx="3"/><rect x="500" y="40" width="44" height="40" rx="3"/></g>
+          <rect x="60" y="100" width="275" height="10" fill="#d9a520"/><rect x="349" y="100" width="231" height="10" fill="#d9a520"/>
+          <rect x="60" y="160" width="520" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <rect x="335" y="148" width="14" height="24" rx="2" fill="#c2412d"/>
+          <line x1="342" y1="112" x2="342" y2="142" stroke="#c2412d" stroke-width="3" stroke-dasharray="5 4"/>
+          <text x="360" y="140" font-size="22" font-weight="700" fill="#c2412d">notch lines up with bump</text>
+          <text x="60" y="222" font-size="18" fill="currentColor" opacity=".7">the slot on the board</text>
+          <text x="22" y="72" font-size="30" font-weight="700" fill="currentColor">↓</text><text x="596" y="72" font-size="30" font-weight="700" fill="currentColor">↓</text>
+        </svg>
+        <figcaption>Press straight down on <b>both ends at once</b>.</figcaption>
+      </figure>
+    </li>
+    <li><b>Press firmly until both clips snap shut with a click.</b> It takes more push than you'd expect. If a clip didn't close, the stick isn't in yet.</li>
+    <li>Put the side panel back on, plug the cord in, flip the switch to <b>I</b>, and press the power button.
+      <div class="warn">The first start can show a <b>black screen for 1 to 3 minutes</b> while it gets used to the new memory. That's normal. <b>Don't</b> turn it off.</div></li>
+    <li>Text Adam: <span class="text">It's on</span>. He'll check from his laptop that it sees all the new memory.</li>
+  </ol>
+  <h3>Watch first (3 minutes)</h3>
+  <p class="muted">Kingston's beginner video. Same idea: notch lined up, press both ends until it clicks.</p>
+  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/kRMJwiXhrEU" title="Kingston: how to install RAM in your desktop PC" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+  <p class="vlink">Video not showing? <a href="https://www.youtube.com/watch?v=kRMJwiXhrEU">Open it on YouTube</a> · Another short one: <a href="https://www.youtube.com/watch?v=9ZpYzRXLTQM">Crucial, 10 easy steps (2 min)</a></p>
+</div>
+
+<!-- PART 3 -->
+<div class="card">
+  <div class="part-head"><div class="badge">3</div><div><h2>At a computer shop</h2><div class="meta">Bring the computer (no screen or keyboard needed) and 3 boxes.</div></div></div>
+  <p>Take the computer to a local computer repair shop with the <b>processor box (AMD Ryzen 9)</b>, the <b>fan box (Thermalright)</b> and the <b>graphics card box (GeForce RTX 5070 Ti)</b>. Show them this:</p>
+  <div class="quote">"Please install this <b>Ryzen 9 processor</b> with this <b>Thermalright cooler</b>, and swap the graphics card for this <b>RTX 5070 Ti</b>. The BIOS is already updated and the new memory is already in. Please check the power supply is at least <b>750 W</b> and connect the card's power cable. If the power supply is too small, please tell me before changing it. Please give me back the old processor and graphics card."</div>
+  <p><b>Before you pay,</b> ask them to:</p>
+  <ul class="check">
+    <li>turn it on once and make sure it starts</li>
+    <li>check the new fan spins</li>
+    <li>give back the old processor and the old graphics card (Adam can sell them)</li>
+  </ul>
+  <p>Back home: plug it in, turn it on, and text Adam <span class="text">Back from the shop</span>. He does everything else from his laptop.</p>
+</div>
+
+<div class="card">
+  <h3 style="margin-top:0">Things never to do</h3>
+  <ul>
+    <li>Never unplug or switch off the computer during Part 1's update.</li>
+    <li>Never touch the gold edges of the memory sticks or the chips if you can help it. Hold them by the sides.</li>
+    <li>Never force anything. If a stick won't go in, turn it around: the notch only fits one way.</li>
+  </ul>
+  <p class="muted">Thank you, Mom! ❤️</p>
+</div>
+
+</div>
+</body>
+</html>
