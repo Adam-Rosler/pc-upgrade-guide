@@ -74,7 +74,7 @@
   <h3 style="margin-top:0">▶️ Watch this first (6 minutes)</h3>
   <p class="muted">The whole job, step by step, with pictures. Pause it any time, and keep this page open for the details.</p>
   <video class="guide" controls playsinline preload="metadata" poster="poster.jpg">
-    <source src="pc-upgrade-guide-3d.mp4" type="video/mp4">
+    <source src="pc-upgrade-guide-cpu-first.mp4" type="video/mp4">
   </video>
 </div>
 
@@ -83,8 +83,8 @@
   <p>Stop, take a photo with your phone, and text it to Adam. Nothing here breaks if you wait.</p>
   <div class="boxes">
     <div class="box"><span class="who mom">Part 1</span><b>Software update</b>≈ 15 min · needs the screen</div>
-    <div class="box"><span class="who mom">Part 2</span><b>New memory</b>≈ 20 min</div>
-    <div class="box"><span class="who mom">Part 3</span><b>New processor + fan</b>≈ 45 min</div>
+    <div class="box"><span class="who mom">Part 2</span><b>New processor + fan</b>≈ 45 min</div>
+    <div class="box"><span class="who mom">Part 3</span><b>New memory</b>≈ 20 min</div>
   </div>
 </div>
 
@@ -120,11 +120,17 @@
 
 <!-- PART 2 -->
 <div class="card">
-  <div class="part-head"><div class="badge">2</div><div><h2>The new memory</h2><div class="meta">About 15 minutes. You'll swap 2 old sticks for 4 new ones.</div></div></div>
+  <div class="part-head"><div class="badge">2</div><div><h2>The new processor and fan</h2><div class="meta">About 45 minutes. Go slowly; nothing here needs force.</div></div></div>
+  <p>The processor sits under the fan in the middle of the board. You'll take the old fan off, swap the processor, then put the big new fan on.</p>
+
+  <h3>Watch first</h3>
+  <p class="muted">This one shows exactly what you're doing: old fan off, old processor out, new one in (4 minutes).</p>
+  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/qmkVVgsgqTk" title="How to upgrade an AMD Ryzen CPU (AM4)" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+  <p class="vlink">Video not showing? <a href="https://www.youtube.com/watch?v=qmkVVgsgqTk" target="_blank">Open it on YouTube</a> · MSI's own 2-minute version: <a href="https://www.youtube.com/watch?v=Xv89nhFk1vc" target="_blank">install an AM4 processor</a></p>
 
   <h3>Turn it off and open it</h3>
   <ol class="steps">
-    <li>Text Adam: <span class="text">Ready for memory</span>. He turns the computer off for you.</li>
+    <li>Text Adam: <span class="text">Ready for processor</span>. He turns the computer off for you.</li>
     <li>When the screen is dark and the lights are off, flip the <b>switch on the back to O</b> and <b>unplug the power cord</b>.</li>
     <li><b>Touch a bare metal part of the case</b> for a second. This clears static electricity, which can damage the parts.</li>
     <li>Take out the <b>2 screws on the back edge</b> of the side panel, slide the panel back and lift it off. Lay the computer on its side, open side up.</li>
@@ -155,72 +161,9 @@
     <figcaption>The back of the computer. Your case may look a bit different; the switch and cord are always at the power box (usually the bottom).</figcaption>
   </figure>
 
-  <h3>Swap the sticks</h3>
-  <figure>
-    <svg viewBox="0 0 700 330" role="img" aria-label="Inside the computer: the 4 memory slots are the tall thin slots just right of the processor fan">
-      <rect x="20" y="20" width="420" height="290" rx="8" fill="none" stroke="currentColor" stroke-width="3"/>
-      <text x="36" y="46" font-size="16" fill="currentColor" opacity=".55">looking straight down at the board</text>
-      <rect x="70" y="72" width="130" height="130" rx="8" fill="none" stroke="currentColor" stroke-width="2.5"/>
-      <circle cx="135" cy="137" r="46" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="2"/>
-      <text x="135" y="228" text-anchor="middle" font-size="18" fill="currentColor" opacity=".75">processor + fan</text>
-      <g fill="#1f8a5b" fill-opacity=".2" stroke="#1f8a5b" stroke-width="2.5">
-        <rect x="240" y="62" width="18" height="170" rx="2"/><rect x="270" y="62" width="18" height="170" rx="2"/><rect x="300" y="62" width="18" height="170" rx="2"/><rect x="330" y="62" width="18" height="170" rx="2"/></g>
-      <g fill="#1f8a5b"><rect x="237" y="52" width="24" height="10" rx="2"/><rect x="267" y="52" width="24" height="10" rx="2"/><rect x="297" y="52" width="24" height="10" rx="2"/><rect x="327" y="52" width="24" height="10" rx="2"/>
-        <rect x="237" y="232" width="24" height="10" rx="2"/><rect x="267" y="232" width="24" height="10" rx="2"/><rect x="297" y="232" width="24" height="10" rx="2"/><rect x="327" y="232" width="24" height="10" rx="2"/></g>
-      <rect x="50" y="260" width="330" height="34" rx="4" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="2"/>
-      <text x="215" y="283" text-anchor="middle" font-size="16" fill="currentColor" opacity=".55">graphics card (leave it alone)</text>
-      <line x1="352" y1="140" x2="455" y2="120" stroke="#1f8a5b" stroke-width="2.5"/>
-      <text x="460" y="112" font-size="24" font-weight="700" fill="#1f8a5b">4 memory slots</text>
-      <text x="460" y="138" font-size="18" fill="currentColor" opacity=".7">right next to the fan</text>
-      <line x1="353" y1="57" x2="455" y2="205" stroke="#1f8a5b" stroke-width="2.5"/>
-      <text x="460" y="212" font-size="24" font-weight="700" fill="#1f8a5b">clips at each end</text>
-      <text x="460" y="238" font-size="18" fill="currentColor" opacity=".7">push down to open</text>
-    </svg>
-    <figcaption>The 4 memory slots stand right next to the processor fan. Right now 2 of them have sticks in.</figcaption>
-  </figure>
-  <ol class="steps">
-    <li><b>Remove the 2 old sticks:</b> push the clip at each end of the slot down, then pull the stick straight up. Put the old sticks in the eBay box.</li>
-    <li><b>Fill all 4 slots with the new sticks.</b> Each stick has a small notch in its gold edge. Line it up with the bump inside the slot; it only fits one way.
-      <figure>
-        <svg viewBox="0 0 640 230" role="img" aria-label="A memory stick: the notch in its gold edge lines up with the bump in the slot">
-          <rect x="60" y="20" width="520" height="90" rx="6" fill="#1f8a5b" fill-opacity=".18" stroke="#1f8a5b" stroke-width="2.5"/>
-          <g fill="currentColor" fill-opacity=".5"><rect x="90" y="40" width="44" height="40" rx="3"/><rect x="150" y="40" width="44" height="40" rx="3"/><rect x="210" y="40" width="44" height="40" rx="3"/><rect x="270" y="40" width="44" height="40" rx="3"/><rect x="380" y="40" width="44" height="40" rx="3"/><rect x="440" y="40" width="44" height="40" rx="3"/><rect x="500" y="40" width="44" height="40" rx="3"/></g>
-          <rect x="60" y="100" width="275" height="10" fill="#d9a520"/><rect x="349" y="100" width="231" height="10" fill="#d9a520"/>
-          <rect x="60" y="160" width="520" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
-          <rect x="335" y="148" width="14" height="24" rx="2" fill="#c2412d"/>
-          <line x1="342" y1="112" x2="342" y2="142" stroke="#c2412d" stroke-width="3" stroke-dasharray="5 4"/>
-          <text x="360" y="140" font-size="22" font-weight="700" fill="#c2412d">notch lines up with bump</text>
-          <text x="60" y="222" font-size="18" fill="currentColor" opacity=".7">the slot on the board</text>
-          <text x="22" y="72" font-size="30" font-weight="700" fill="currentColor">↓</text><text x="596" y="72" font-size="30" font-weight="700" fill="currentColor">↓</text>
-        </svg>
-        <figcaption>Press straight down on <b>both ends at once</b>.</figcaption>
-      </figure>
-    </li>
-    <li><b>Press firmly until both clips snap shut with a click.</b> It takes more push than you'd expect. If a clip didn't close, the stick isn't in yet.</li>
-    <li><b>Leave the side panel off</b> (Part 3 needs it open). Plug the cord in, flip the switch to <b>I</b>, and press the power button. Don't touch anything inside while it's on.
-      <div class="warn">The first start can show a <b>black screen for 1 to 3 minutes</b> while it gets used to the new memory. That's normal. <b>Don't</b> turn it off.</div></li>
-    <li>Text Adam: <span class="text">It's on</span>. He checks from his laptop that it sees all the new memory, then tells you when to start Part 3.</li>
-  </ol>
-  <h3>Watch first (3 minutes)</h3>
-  <p class="muted">Kingston's beginner video. Same idea: notch lined up, press both ends until it clicks.</p>
-  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/kRMJwiXhrEU" title="Kingston: how to install RAM in your desktop PC" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-  <p class="vlink">Video not showing? <a href="https://www.youtube.com/watch?v=kRMJwiXhrEU">Open it on YouTube</a> · Another short one: <a href="https://www.youtube.com/watch?v=9ZpYzRXLTQM">Crucial, 10 easy steps (2 min)</a></p>
-</div>
-
-<!-- PART 3 -->
-<div class="card">
-  <div class="part-head"><div class="badge">3</div><div><h2>The new processor and fan</h2><div class="meta">About 45 minutes. Go slowly; nothing here needs force.</div></div></div>
-  <p>The processor sits under the fan in the middle of the board. You'll take the old fan off, swap the processor, then put the big new fan on.</p>
-
-  <h3>Watch first</h3>
-  <p class="muted">This one shows exactly what you're doing: old fan off, old processor out, new one in (4 minutes).</p>
-  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/qmkVVgsgqTk" title="How to upgrade an AMD Ryzen CPU (AM4)" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
-  <p class="vlink">Video not showing? <a href="https://www.youtube.com/watch?v=qmkVVgsgqTk" target="_blank">Open it on YouTube</a> · MSI's own 2-minute version: <a href="https://www.youtube.com/watch?v=Xv89nhFk1vc" target="_blank">install an AM4 processor</a></p>
-
   <h3>Take the old fan off</h3>
   <ol class="steps">
-    <li>Text Adam: <span class="text">Ready for processor</span>. He turns the computer off. Then switch the back to <b>O</b>, <b>unplug the cord</b>, and <b>touch bare metal</b> on the case.</li>
-    <li>Lay the computer on its side, open side up. <b>Take a photo</b> of the middle of the board so you can see how it looked.</li>
+    <li><b>Take a photo</b> of the middle of the board so you can see how it looked.</li>
     <li>Find the old fan's <b>small cable</b>. It plugs into the board near the fan, in a spot labelled <b>CPU_FAN</b>. Pull the plug straight out (not by the wires).</li>
     <li>The old fan is held by <b>4 screws at its corners</b>. Loosen them a little each, going corner to opposite corner, until all 4 are loose. They stay attached to the fan.</li>
     <li><b>Twist the fan gently left and right</b> a few times, then lift it straight up.
@@ -280,11 +223,73 @@
     <li>Set the fan straight down onto the processor, lining its 2 screws up with the bars. Tighten them <b>a few turns each, back and forth</b>, until they stop. Don't force past the stop.</li>
     <li>Clip the fans on if they aren't already. The <b>arrow on the side of each fan points to the back</b> of the computer.</li>
     <li>Plug the fan cable into <b>CPU_FAN</b>, where the old one was. If the fans have 2 cables joined into one, plug in that one.</li>
-    <li>Check: the memory clips are still closed, no cables touch the fan blades, nothing rattles when you tilt it gently.</li>
-    <li>Put the side panel back on, plug in, switch to <b>I</b>, press the power button.
-      <div class="warn">Again, a <b>black screen for 1 to 3 minutes</b> is normal the first time. <b>Don't</b> turn it off.</div></li>
-    <li>Text Adam: <span class="text">Processor is in</span>. He checks everything from his laptop. Done!</li>
+    <li>Check: no cables touch the fan blades, and nothing rattles when you tilt it gently.</li>
+    <li><b>Leave the side panel off</b> (Part 3 needs it open). Plug the cord in, flip the switch to <b>I</b>, and press the power button. Don't touch anything inside while it's on.
+      <div class="warn">The first start can show a <b>black screen for 1 to 3 minutes</b>. That's normal. <b>Don't</b> turn it off.</div></li>
+    <li>Text Adam: <span class="text">Processor is in</span>. He checks it from his laptop, then tells you when to start Part 3.</li>
   </ol>
+</div>
+
+<!-- PART 3 -->
+<div class="card">
+  <div class="part-head"><div class="badge">3</div><div><h2>The new memory</h2><div class="meta">About 20 minutes. You'll swap 2 old sticks for 4 new ones.</div></div></div>
+
+  <h3>Turn it off</h3>
+  <ol class="steps">
+    <li>Text Adam: <span class="text">Ready for memory</span>. He turns the computer off for you.</li>
+    <li>When the screen is dark, flip the <b>switch on the back to O</b>, <b>unplug the power cord</b>, and <b>touch bare metal</b> on the case again. The side panel is already off.</li>
+  </ol>
+
+  <h3>Swap the sticks</h3>
+  <figure>
+    <svg viewBox="0 0 700 330" role="img" aria-label="Inside the computer: the 4 memory slots are the tall thin slots just right of the processor fan">
+      <rect x="20" y="20" width="420" height="290" rx="8" fill="none" stroke="currentColor" stroke-width="3"/>
+      <text x="36" y="46" font-size="16" fill="currentColor" opacity=".55">looking straight down at the board</text>
+      <rect x="70" y="72" width="130" height="130" rx="8" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <circle cx="135" cy="137" r="46" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="2"/>
+      <text x="135" y="228" text-anchor="middle" font-size="18" fill="currentColor" opacity=".75">processor + fan</text>
+      <g fill="#1f8a5b" fill-opacity=".2" stroke="#1f8a5b" stroke-width="2.5">
+        <rect x="240" y="62" width="18" height="170" rx="2"/><rect x="270" y="62" width="18" height="170" rx="2"/><rect x="300" y="62" width="18" height="170" rx="2"/><rect x="330" y="62" width="18" height="170" rx="2"/></g>
+      <g fill="#1f8a5b"><rect x="237" y="52" width="24" height="10" rx="2"/><rect x="267" y="52" width="24" height="10" rx="2"/><rect x="297" y="52" width="24" height="10" rx="2"/><rect x="327" y="52" width="24" height="10" rx="2"/>
+        <rect x="237" y="232" width="24" height="10" rx="2"/><rect x="267" y="232" width="24" height="10" rx="2"/><rect x="297" y="232" width="24" height="10" rx="2"/><rect x="327" y="232" width="24" height="10" rx="2"/></g>
+      <rect x="50" y="260" width="330" height="34" rx="4" fill="none" stroke="currentColor" stroke-opacity=".45" stroke-width="2"/>
+      <text x="215" y="283" text-anchor="middle" font-size="16" fill="currentColor" opacity=".55">graphics card (leave it alone)</text>
+      <line x1="352" y1="140" x2="455" y2="120" stroke="#1f8a5b" stroke-width="2.5"/>
+      <text x="460" y="112" font-size="24" font-weight="700" fill="#1f8a5b">4 memory slots</text>
+      <text x="460" y="138" font-size="18" fill="currentColor" opacity=".7">right next to the fan</text>
+      <line x1="353" y1="57" x2="455" y2="205" stroke="#1f8a5b" stroke-width="2.5"/>
+      <text x="460" y="212" font-size="24" font-weight="700" fill="#1f8a5b">clips at each end</text>
+      <text x="460" y="238" font-size="18" fill="currentColor" opacity=".7">push down to open</text>
+    </svg>
+    <figcaption>The 4 memory slots stand right next to the processor fan. Right now 2 of them have sticks in.</figcaption>
+  </figure>
+  <ol class="steps">
+    <li><b>Remove the 2 old sticks:</b> push the clip at each end of the slot down, then pull the stick straight up. Put the old sticks in the eBay box.</li>
+    <li><b>Fill all 4 slots with the new sticks.</b> Each stick has a small notch in its gold edge. Line it up with the bump inside the slot; it only fits one way.
+      <figure>
+        <svg viewBox="0 0 640 230" role="img" aria-label="A memory stick: the notch in its gold edge lines up with the bump in the slot">
+          <rect x="60" y="20" width="520" height="90" rx="6" fill="#1f8a5b" fill-opacity=".18" stroke="#1f8a5b" stroke-width="2.5"/>
+          <g fill="currentColor" fill-opacity=".5"><rect x="90" y="40" width="44" height="40" rx="3"/><rect x="150" y="40" width="44" height="40" rx="3"/><rect x="210" y="40" width="44" height="40" rx="3"/><rect x="270" y="40" width="44" height="40" rx="3"/><rect x="380" y="40" width="44" height="40" rx="3"/><rect x="440" y="40" width="44" height="40" rx="3"/><rect x="500" y="40" width="44" height="40" rx="3"/></g>
+          <rect x="60" y="100" width="275" height="10" fill="#d9a520"/><rect x="349" y="100" width="231" height="10" fill="#d9a520"/>
+          <rect x="60" y="160" width="520" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+          <rect x="335" y="148" width="14" height="24" rx="2" fill="#c2412d"/>
+          <line x1="342" y1="112" x2="342" y2="142" stroke="#c2412d" stroke-width="3" stroke-dasharray="5 4"/>
+          <text x="360" y="140" font-size="22" font-weight="700" fill="#c2412d">notch lines up with bump</text>
+          <text x="60" y="222" font-size="18" fill="currentColor" opacity=".7">the slot on the board</text>
+          <text x="22" y="72" font-size="30" font-weight="700" fill="currentColor">↓</text><text x="596" y="72" font-size="30" font-weight="700" fill="currentColor">↓</text>
+        </svg>
+        <figcaption>Press straight down on <b>both ends at once</b>.</figcaption>
+      </figure>
+    </li>
+    <li><b>Press firmly until both clips snap shut with a click.</b> It takes more push than you'd expect. If a clip didn't close, the stick isn't in yet.</li>
+    <li>Put the side panel back on (2 screws), plug in, switch to <b>I</b>, press the power button.
+      <div class="warn">Again, a <b>black screen for 1 to 3 minutes</b> is normal while it gets used to the new memory. <b>Don't</b> turn it off.</div></li>
+    <li>Text Adam: <span class="text">It's on</span>. He checks everything from his laptop. Done!</li>
+  </ol>
+  <h3>Watch first (3 minutes)</h3>
+  <p class="muted">Kingston's beginner video. Same idea: notch lined up, press both ends until it clicks.</p>
+  <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/kRMJwiXhrEU" title="Kingston: how to install RAM in your desktop PC" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+  <p class="vlink">Video not showing? <a href="https://www.youtube.com/watch?v=kRMJwiXhrEU">Open it on YouTube</a> · Another short one: <a href="https://www.youtube.com/watch?v=9ZpYzRXLTQM">Crucial, 10 easy steps (2 min)</a></p>
 </div>
 
 <div class="card">
