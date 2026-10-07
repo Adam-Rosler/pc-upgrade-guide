@@ -53,6 +53,7 @@
   figcaption { color: var(--soft); font-size: 15px; margin-top: 4px; }
   .video { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 10px; overflow: hidden; background: #000; margin-top: 8px; }
   .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  video.guide { width: 100%; border-radius: 10px; background: #000; display: block; margin-top: 8px; }
   .vlink { font-size: 15px; color: var(--soft); }
   a { color: var(--brand); }
   .quote { font-size: 18px; border: 1px dashed var(--line); border-radius: 10px; padding: 12px 14px; margin: 10px 0; }
@@ -68,6 +69,14 @@
 
 <h1>Upgrading Adam's computer</h1>
 <p class="lead">Hi Mom! This is everything, one step at a time, in 3 parts at home (about 1½ hours in total, with breaks whenever you like). Adam helps from his laptop the whole way.</p>
+
+<div class="card">
+  <h3 style="margin-top:0">▶️ Watch this first (6 minutes)</h3>
+  <p class="muted">The whole job, step by step, with pictures. Pause it any time, and keep this page open for the details.</p>
+  <video class="guide" controls playsinline preload="metadata" poster="poster.jpg">
+    <source src="pc-upgrade-guide.mp4" type="video/mp4">
+  </video>
+</div>
 
 <div class="card">
   <h3 style="margin-top:0">If you're ever unsure</h3>
